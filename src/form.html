@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="icon"
+      href="../Icons background/pngwing.com.png"
+      type="image/icon type"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body id="form_body" class="">
+    <nav id="navigator">
+      <div class="menu sm:ml-6 relative">
+        <button id="menu-btn" class="nav_but">
+          <a href="index.html" target="_self"
+            ><img
+              class="icon inline-block"
+              src="../Icons background/arrow_back_ios_white_24dp.svg"
+              alt="menu_icon"
+            />
+            Back
+          </a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="absolute top-12 bottom-7 right-0 left-0 z-10">
+      <form
+        action="Survey-form"
+        class="bg-gray-400 w-11/12 mx-auto rounded-xl flex flex-col opacity-95"
+      >
+        <header class="pl-10 mb-2">
+          <h1 id="title" class="text-3xl mt-3 font-body">Survey Form</h1>
+
+          <p id="description" class="font-body">
+            Survey Form for Metallica Fans
+          </p>
+
+        </header>
+
+        <div id="Name" class="sm:flex items-center sm:w-3/5 mb-2">
+          <div class="sm:w-1/5 text-center sm:text-right mr-2">
+            <label id="name-label" for="name" class="font-body text-xl"
+              >Name</label
+            >
+          </div>
+
+          <div
+            class="flex justify-center sm:block items-center w-full sm:w-3/5"
+          >
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="rounded-xl font-body text-center w-full"
+            />
+          </div>
+
+        </div>
+
+        <div id="Email" class="sm:flex items-center sm:w-3/5 mb-2">
+          <div class="sm:w-1/5 text-center sm:text-right mr-2">
+            <label id="email-label" for="email" class="font-body text-xl"
+              >E-mail</label
+            >
+          </div>
+
+          <div
+            class="flex justify-center sm:block items-center w-full sm:w-3/5"
+          >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your E-mail"
+              class="rounded-xl font-body text-center w-full"
+            />
+          </div>
+
+        </div>
+
+        <div class="sm:flex items-center sm:w-3/5 mb-2">
+          <div class="sm:w-1/5 text-center sm:text-right mr-2">
+            <label id="age-label" for="age" class="font-body text-xl"
+              >Age</label
+            >
+          </div>
+
+          <div
+            class="flex justify-center sm:block items-center w-full sm:w-3/5"
+          >
+            <input
+              type="number"
+              id="age"
+              min="1"
+              max="100"
+              placeholder="Age"
+              class="rounded-xl font-body text-center w-4/5 sm:w-3/5"
+            />
+          </div>
+
+        </div>
+
+        <div class="sm:flex items-center sm:w-3/5 mb-2">
+          <div class="sm:w-1/5 text-center sm:text-right mr-2">
+            <label
+              id="dropdown-label"
+              for="dropdown-opt"
+              class="font-body text-xl"
+            >
+              Select Your Language
+            </label>
+          </div>
+
+          <div
+            class="flex justify-center sm:block items-center w-full sm:w-3/5"
+          >
+            <select
+              id="dropdown-opt"
+              name="dropdown-opt"
+              class="rounded-xl font-body text-center w-4/5 sm:w-3/5"
+            >
+              <option value="Eng">Eng</option>
+              <option value="Aze">Aze</option>
+              <option value="Ukr">Ukr</option>
+              <option value="Rus">Rus</option>
+              <option value="Tr">Tr</option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <fieldset class="sm:flex items-center sm:w-3/5 mb-2">
+
+            <div class="sm:w-1/5 text-center sm:text-right mr-2">
+
+              <legend id="radiob" class="font-body text-xl">
+                Choose Gender
+              </legend>
+
+            </div>
+
+            <div
+              class="flex justify-around items-center w-full sm:w-3/5 font-body"
+            >
+
+              <div>
+
+                <input
+                  id="FieldMale"
+                  name="Field5"
+                  type="radio"
+                  value="Male"
+                  checked="checked"
+                />
+
+                <label class="" for="FieldMale">Male</label>
+
+              </div>
+
+              <div>
+                <input
+                  id="FieldFemale"
+                  name="Field5"
+                  type="radio"
+                  value="Female"
+                />
+                <label class="" for="FieldFemale">Female</label>
+              </div>
+
+              <div>
+                <input
+                  id="FieldOther"
+                  name="Field5"
+                  type="radio"
+                  value="Other"
+                />
+                <label class="" for="FieldOther">Other</label>
+              </div>
+
+            </div>
+          </fieldset>
+
+        </div>
+
+        <div>
+            <fieldset class="sm:flex items-center sm:w-3/5 mb-2">
+                <div class="sm:w-1/5 text-center sm:text-right mr-2">
+                    <legend id="checkbox" class="font-body text-xl">
+                        Hobbies
+                    </legend>
+                </div>
+
+                <div class="flex justify-around items-center w-full sm:w-3/5 font-body">
+
+                <div>
+                    <input id="fieldArt" name="Field6" type="checkbox" value="Art" >
+                    <label class="" for="fieldArt">Art</label>
+                </div>
+
+                <div>
+                    <input id="fieldMusic" name="Field7" type="checkbox" value="Music" >
+                    <label class="" for="fieldMusic">Music</label>
+                </div>
+
+                <div>
+                    <input id="fieldSports" name="Field8" type="checkbox" value="Sports" >
+                    <label class="" for="fieldSports">Sports</label>
+                
+
+                </div>
+
+                <div>
+                    <input id="fieldOther" name="Field8" type="checkbox" value="Other" >
+                    <label class="" for="fieldOther">Other</label>  
+                </div>
+            </fieldset>
+        </div>
+        
+        <div class="sm:flex items-center sm:w-3/5 mb-2">
+            <div class="sm:w-1/5 text-center sm:text-right mr-2">
+                <label class="font-body text-xl" id="text" for="additionalInfo">
+                    About You
+                </label>
+            </div>
+            
+            <div class="flex justify-center sm:block items-center w-full sm:w-3/5">
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Additional information about yourself" spellcheck="true" rows="4" cols="30" class="rounded-xl font-body text-center w-4/5 sm:w-3/5" ></textarea>
+            </div>
+        </div>
+            
+            <div class="mx-auto w-2/12 h-4 mb-5">
+                <div class="">
+                    <button id="submit" name="submit" type="submit" value="Submit" class="font-body text-center text-xl bg-checkout rounded-2xl w-full">Submit</button>
+                </div>
+            </div>
+
+
+
+      </form>
+    </main>
+
+    <footer class="fixed bottom-0">
+      <div class=" flex items-center">
+        ©2021 All rights not reserved
+        <div class="icons flex justify-center items-center ml-5">
+          <img
+            class="pr-1 footer_icon"
+            src="../Icons background/Face.svg"
+            alt="facebook"
+          />
+          <img
+            class="pl-1 footer_icon"
+            src="../Icons background/insta.svg"
+            alt="instagram"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

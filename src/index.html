@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Metallica Merchs</title>
+    <link
+      rel="icon"
+      href="../Icons background/pngwing.com.png"
+      type="image/icon type"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav id="navigator">
+      <div class="menu sm:ml-6 relative">
+        <button id="menu-btn" class="nav_but">
+          <img
+            class="icon inline-block"
+            src="../Icons background/menu_white_24dp.svg"
+            alt="menu_icon"
+          />
+          Menu
+        </button>
+
+        <div
+          id="dropdown"
+          class="
+            dropdown
+            transition-all
+            ease-in-out
+            duration-1000
+            mt-2
+            sm:mt-1.5
+            md:mt-1
+            lg:mt-0
+            absolute
+            bg-slate-800 bg-opacity-95
+            hidden
+            flex-col
+            rounded
+            text-sm
+            w-96
+            font-body
+            text-white
+          "
+        >
+          <button id="close" class="absolute right-0 w-8">
+            <img src="../Icons background/close_white_24dp.svg" alt="" />
+          </button>
+
+          <a href="form.html" class="dropdown-a" target="_self"
+            ><img
+              src="../Icons background/drive_file_rename_outline_white_24dp.svg"
+              class="w-7 mr-5"
+            />Form</a
+          >
+
+          <a href="#" class="dropdown-a"
+            ><img src="../Icons background/News.svg" class="w-7 mr-5" />News</a
+          >
+
+          <a href="#" class="dropdown-a"
+            ><img
+              src="../Icons background/travel_explore_white_24dp.svg"
+              class="w-7 mr-5"
+            />Upcoming Tours</a
+          >
+
+          <a href="#" class="dropdown-a"
+            ><img
+              src="../Icons background/Media.svg"
+              class="w-7 mr-5"
+            />Media</a
+          >
+
+          <a href="#" class="dropdown-a"
+            ><img
+              src="../Icons background/person_white_24dp.svg"
+              class="w-7 mr-5"
+            />Account Details</a
+          >
+
+          <a href="#" class="dropdown-a"
+            ><img src="../Icons background/About.svg" class="w-7 mr-5" />About
+            Us</a
+          >
+        </div>
+      </div>
+
+      <div class="search_bar flex items-center">
+        <label
+          for="input1"
+          class="cursor-pointer hover:bg-gray-700 hover:rounded-xl"
+        >
+          <img
+            class="icon"
+            src="../Icons background/search_white_24dp.svg"
+            alt="search icon"
+          />
+        </label>
+
+        <input
+          type="text"
+          id="input1"
+          class="
+            text-center
+            font-body
+            rounded-full
+            text:lg
+            md:w-48 md:text-xl
+            lg:w-64 lg:text-2xl
+            h-1/2
+          "
+          placeholder="Search for item"
+        />
+      </div>
+
+      <div class="flex">
+        <div class="cart mr-0 sm:mr-8">
+          <button id="CartBtn" class="nav_but">
+            <img
+              class="icon inline-block"
+              src="../Icons background/shopping_cart_white_24dp.svg"
+              alt="cart"
+            />Cart
+          </button>
+
+          <div
+            id="Cart"
+            class="
+              absolute
+              right-0
+              mt-2
+              sm:mt-1.5
+              md:mt-1
+              lg:mt-0
+              bg-slate-800 bg-opacity-95
+              hidden
+              flex-col
+              justify-center
+              rounded
+              text-sm
+              w-110
+              sm:w-112
+              md:w-114
+              lg:w-116
+              xl:w-118
+              font-body
+              text-white
+            "
+          >
+            <button id="cartClose">
+              <img
+                src="../Icons background/close_white_24dp.svg"
+                class="absolute left-0 w-8"
+              />
+            </button>
+
+            <h1 class="text-3xl text-center mt-3">Your List</h1>
+
+            <div id="cartContent" class="flex flex-col items-center">
+              <div id="hoodie" class="w-4/5 bg-gray-400 rounded-3xl">
+                <div class="flex items-center justify-end mr-2 mt-2">
+                  <button class="add">+</button>
+                  <button class="add">-</button>
+                </div>
+
+                <div class="flex justify-around">
+                  <img
+                    src="../Icons background/Hoodie 11.png"
+                    class="w-24 mb-6"
+                  />
+                  <div>
+                    <h1
+                      class="
+                        text-xl
+                        lg:text-2xl
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Metallica Hoodie
+                    </h1>
+
+                    <h1
+                      class="
+                        text-lg
+                        lg:text-xl
+                        font-mono
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Price: 29.99$
+                    </h1>
+
+                    <h1
+                      class="
+                        text-md
+                        lg:text-lg
+                        font-mono
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Count: 1
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <div id="Ticket" class="w-4/5 bg-gray-400 rounded-3xl mt-4">
+                <div class="flex items-center justify-end mr-2 mt-2">
+                  <button class="add">+</button>
+                  <button class="add">-</button>
+                </div>
+
+                <div class="flex justify-around">
+                  <img
+                    src="../Icons background/ticket 12.png"
+                    class="w-36 h-auto mb-6"
+                  />
+                  <div>
+                    <h1
+                      class="
+                        text-xl
+                        lg:text-2xl
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Ticket
+                    </h1>
+
+                    <h1
+                      class="
+                        text-lg
+                        lg:text-xl
+                        font-mono
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Price: 60$
+                    </h1>
+
+                    <h1
+                      class="
+                        text-md
+                        lg:text-lg
+                        font-mono
+                        text-center
+                        mt-3
+                        mr-8
+                        text-black
+                      "
+                    >
+                      Count: 1
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="
+                my-5
+                mx-auto
+                flex
+                justify-around
+                items-center
+                w-2/5
+                border-black border-2
+                rounded-full
+                bg-gray-400
+              "
+            >
+              <div
+                class="
+                  font-mono
+                  text-xl
+                  border-r-2 border-dashed border-black
+                  pr-3
+                "
+              >
+                Total
+              </div>
+              <div class="font-mono text-xl pr-3">89.99%</div>
+            </div>
+            <button
+              class="
+                font-mono
+                text-black text-3xl
+                bg-checkout
+                w-3/5
+                flex
+                justify-center
+                items-center
+                rounded-2xl
+                mx-auto
+                mb-4
+              "
+            >
+              <img src="../Icons background/CArt.svg" class="w-10 my-2" />
+              Checkout
+            </button>
+          </div>
+        </div>
+
+        <div class="login mr-0 sm:mr-9">
+          <button id="LoginBtn" class="nav_but relative">
+            <img
+              class="icon inline-block"
+              src="../Icons background/person_white_24dp.svg"
+              alt="login"
+            />Login
+          </button>
+
+          <div
+            id="login"
+            class="
+              login
+              absolute
+              right-0
+              mt-2
+              sm:mt-1.5
+              md:mt-1
+              lg:mt-0
+              bg-slate-800 bg-opacity-95
+              hidden
+              flex-col
+              justify-center
+              rounded
+              text-sm
+              w-110
+              sm:w-112
+              md:w-114
+              lg:w-116
+              xl:w-118
+              font-body
+              text-white
+            "
+          >
+            <button id="loginClose">
+              <img
+                src="../Icons background/close_white_24dp.svg"
+                class="absolute left-0 w-8"
+              />
+            </button>
+
+            <h1 class="text-3xl text-center mt-3">LogIn</h1>
+
+            <div class="buttons flex justify-around">
+              <button
+                class="
+                  w-2/5
+                  facebook
+                  flex
+                  justify-center
+                  items-center
+                  bg-facebook
+                  opacity-100
+                  rounded-full
+                "
+              >
+                <img src="../Icons background/Face.png" class="m-1 w-1/5" />
+                <img src="../Icons background/Facebook.png" class="w-2/4" />
+              </button>
+
+              <button
+                class="
+                  google
+                  w-2/5
+                  flex
+                  justify-center
+                  items-center
+                  bg-white
+                  opacity-100
+                  rounded-full
+                "
+              >
+                <img src="../Icons background/Goog7.png" class="m-1 w-1/5" />
+                <img src="../Icons background/gogule 6.png" class="w-2/4" />
+              </button>
+            </div>
+
+            <h1 class="text-2xl text-center">Or</h1>
+
+            <div class="inputs flex flex-col justify-center items-center">
+              <div class="Email w-3/4 flex flex-col">
+                <label for="E-mail" class="ml-2 text-lg lg:text-xl xl:text-2xl"
+                  >E-mail Address</label
+                >
+
+                <input
+                  type="email"
+                  name="E-mail"
+                  id="E-mail"
+                  placeholder="Enter your email address"
+                  class="rounded-full text-center h-6 lg:h-7 xl:h-8 text-black"
+                />
+              </div>
+
+              <div class="Password w-3/4 flex flex-col">
+                <div class="flex justify-between">
+                  <label
+                    for="Password"
+                    class="ml-2 text-lg lg:text-xl xl:text-2xl"
+                    >Password</label
+                  >
+
+                  <a href="#" class="text-sm lg:text-md xl:text-lg mt-1"
+                    >Forget Your Password?</a
+                  >
+                </div>
+
+                <input
+                  type="password"
+                  name="Password"
+                  id="Password"
+                  placeholder="Enter your password"
+                  class="rounded-full text-center h-6 lg:h-7 xl:h-8 text-black"
+                />
+              </div>
+            </div>
+
+            <button
+              class="
+                login
+                w-2/5
+                bg-sign
+                flex
+                justify-center
+                items-center
+                opacity-100
+                rounded-full
+                h-7
+                md:h-8
+                lg:h-9
+                xl:h-10
+                my-2
+                lg:my-3
+                xl:my-4
+                mx-auto
+                text-lg
+                lg:text-xl
+                xl:text-2xl
+                text-black
+              "
+              type="submit"
+            >
+              Login
+            </button>
+
+            <div>
+              <h1 class="text-2xl text-left pl-2">Not a member yet?</h1>
+              <h1 class="text-2xl text-center">Sign up right now</h1>
+
+              <button
+                class="
+                  Sign_Up
+                  login
+                  w-2/5
+                  bg-red-400
+                  flex
+                  justify-center
+                  items-center
+                  opacity-100
+                  rounded-full
+                  h-7
+                  md:h-8
+                  lg:h-9
+                  xl:h-10
+                  my-2
+                  lg:my-3
+                  xl:my-4
+                  mx-auto
+                  text-lg
+                  lg:text-xl
+                  xl:text-2xl
+                  text-black
+                  ml-auto
+                  mr-0
+                "
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      id="main"
+      class="-z-10 absolute top-12 bottom-7 sm:bottom-30 flex items-end"
+    >
+      <div class="sm:flex md:justify-around lg:mr-64 sm:mb-10">
+        <div
+          id="ticket"
+          class="
+            pr-16
+            sm:pr-0
+            flex flex-col
+            justify-center
+            items-center
+            sm:w-full
+            xl:w-3/4
+            mb-16
+          "
+        >
+          <img
+            class="h-3/4 w-full"
+            src="../Icons background/met-Ticket.jpg"
+            alt="ticket"
+          />
+          <button class="main_but">Buy Tickets Now</button>
+        </div>
+
+        <div
+          id="start_shop"
+          class="
+            mb-10
+            ml-16
+            sm:ml-24
+            md:ml-24
+            flex flex-col
+            justify-center
+            items-center
+            sm:w-full
+            xl:w-3/4
+          "
+        >
+          <img
+            class="h-3/4 w-full"
+            src="../Icons background/store-hero_20190114.jpg"
+            alt="merch"
+          />
+          <button class="main_but">Start Shopping Now</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="flex items-center">
+        ©2021 All rights not reserved
+        <div class="icons flex justify-center items-center ml-5">
+          <img
+            class="pr-1 footer_icon"
+            src="../Icons background/Face.svg"
+            alt="facebook"
+          />
+
+          <img
+            class="pl-1 footer_icon"
+            src="../Icons background/insta.svg"
+            alt="instagram"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
