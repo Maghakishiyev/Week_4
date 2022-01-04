@@ -10,7 +10,7 @@
       href="../Icons background/pngwing.com.png"
       type="image/icon type"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
   </head>
 
   <body id="form_body" class="">
@@ -37,15 +37,15 @@
         <header class="pl-10 mb-2">
           <h1 id="title" class="text-3xl mt-3 font-body">Survey Form</h1>
 
-          <p id="description" class="font-body">
+          <p id="description" class="font-body text-xl">
             Survey Form for Metallica Fans
           </p>
 
         </header>
 
-        <div id="Name" class="sm:flex items-center sm:w-3/5 mb-2">
+        <div id="Name" class="sm:flex items-center sm:w-3/5 mb-2 ">
           <div class="sm:w-1/5 text-center sm:text-right mr-2">
-            <label id="name-label" for="name" class="font-body text-xl"
+            <label id="name-label" for="name" class="font-body text-2xl"
               >Name</label
             >
           </div>
@@ -57,7 +57,7 @@
               type="text"
               id="name"
               placeholder="Enter your name"
-              class="rounded-xl font-body text-center w-full"
+              class="rounded-xl font-body text-center w-full text-2xl"
             />
           </div>
 
@@ -65,7 +65,7 @@
 
         <div id="Email" class="sm:flex items-center sm:w-3/5 mb-2">
           <div class="sm:w-1/5 text-center sm:text-right mr-2">
-            <label id="email-label" for="email" class="font-body text-xl"
+            <label id="email-label" for="email" class="font-body text-2xl"
               >E-mail</label
             >
           </div>
@@ -77,7 +77,7 @@
               type="email"
               id="email"
               placeholder="Enter your E-mail"
-              class="rounded-xl font-body text-center w-full"
+              class="rounded-xl font-body text-2xl text-center w-full"
             />
           </div>
 
@@ -85,7 +85,7 @@
 
         <div class="sm:flex items-center sm:w-3/5 mb-2">
           <div class="sm:w-1/5 text-center sm:text-right mr-2">
-            <label id="age-label" for="age" class="font-body text-xl"
+            <label id="age-label" for="age" class="font-body text-2xl"
               >Age</label
             >
           </div>
@@ -99,7 +99,7 @@
               min="1"
               max="100"
               placeholder="Age"
-              class="rounded-xl font-body text-center w-4/5 sm:w-3/5"
+              class="rounded-xl text-2xl font-body text-center w-4/5 sm:w-3/5"
             />
           </div>
 
@@ -110,7 +110,7 @@
             <label
               id="dropdown-label"
               for="dropdown-opt"
-              class="font-body text-xl"
+              class="font-body text-2xl"
             >
               Select Your Language
             </label>
@@ -122,7 +122,7 @@
             <select
               id="dropdown-opt"
               name="dropdown-opt"
-              class="rounded-xl font-body text-center w-4/5 sm:w-3/5"
+              class="rounded-xl text-2xl font-body text-center w-4/5 sm:w-3/5"
             >
               <option value="Eng">Eng</option>
               <option value="Aze">Aze</option>
@@ -141,7 +141,7 @@
 
             <div class="sm:w-1/5 text-center sm:text-right mr-2">
 
-              <legend id="radiob" class="font-body text-xl">
+              <legend id="radiob" class="font-body text-2xl">
                 Choose Gender
               </legend>
 
@@ -161,7 +161,7 @@
                   checked="checked"
                 />
 
-                <label class="" for="FieldMale">Male</label>
+                <label class="text-2xl" for="FieldMale">Male</label>
 
               </div>
 
@@ -172,7 +172,7 @@
                   type="radio"
                   value="Female"
                 />
-                <label class="" for="FieldFemale">Female</label>
+                <label class="text-2xl" for="FieldFemale">Female</label>
               </div>
 
               <div>
@@ -182,7 +182,7 @@
                   type="radio"
                   value="Other"
                 />
-                <label class="" for="FieldOther">Other</label>
+                <label class="text-2xl" for="FieldOther">Other</label>
               </div>
 
             </div>
@@ -193,7 +193,7 @@
         <div>
             <fieldset class="sm:flex items-center sm:w-3/5 mb-2">
                 <div class="sm:w-1/5 text-center sm:text-right mr-2">
-                    <legend id="checkbox" class="font-body text-xl">
+                    <legend id="checkbox" class="font-body text-2xl">
                         Hobbies
                     </legend>
                 </div>
@@ -202,43 +202,43 @@
 
                 <div>
                     <input id="fieldArt" name="Field6" type="checkbox" value="Art" >
-                    <label class="" for="fieldArt">Art</label>
+                    <label class="text-2xl" for="fieldArt">Art</label>
                 </div>
 
                 <div>
                     <input id="fieldMusic" name="Field7" type="checkbox" value="Music" >
-                    <label class="" for="fieldMusic">Music</label>
+                    <label class="text-2xl" for="fieldMusic">Music</label>
                 </div>
 
                 <div>
                     <input id="fieldSports" name="Field8" type="checkbox" value="Sports" >
-                    <label class="" for="fieldSports">Sports</label>
+                    <label class="text-2xl" for="fieldSports">Sports</label>
                 
 
                 </div>
 
                 <div>
                     <input id="fieldOther" name="Field8" type="checkbox" value="Other" >
-                    <label class="" for="fieldOther">Other</label>  
+                    <label class="text-2xl" for="fieldOther">Other</label>  
                 </div>
             </fieldset>
         </div>
         
         <div class="sm:flex items-center sm:w-3/5 mb-2">
             <div class="sm:w-1/5 text-center sm:text-right mr-2">
-                <label class="font-body text-xl" id="text" for="additionalInfo">
+                <label class="font-body text-2xl" id="text" for="additionalInfo">
                     About You
                 </label>
             </div>
             
             <div class="flex justify-center sm:block items-center w-full sm:w-3/5">
-                <textarea id="additionalInfo" name="additionalInfo" placeholder="Additional information about yourself" spellcheck="true" rows="4" cols="30" class="rounded-xl font-body text-center w-4/5 sm:w-3/5" ></textarea>
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Additional information about yourself" spellcheck="true" rows="4" cols="30" class="rounded-xl text-2xl font-body text-center w-4/5 sm:w-3/5" ></textarea>
             </div>
         </div>
             
             <div class="mx-auto w-2/12 h-4 mb-5">
                 <div class="">
-                    <button id="submit" name="submit" type="submit" value="Submit" class="font-body text-center text-xl bg-checkout rounded-2xl w-full">Submit</button>
+                    <button id="submit" name="submit" type="submit" value="Submit" class="font-body text-center text-2xl bg-checkout rounded-2xl w-full">Submit</button>
                 </div>
             </div>
 
